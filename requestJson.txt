@@ -1,0 +1,21 @@
+base url:  http://localhost:3000
+
+## Create User
+service url: /users
+method: POST
+body: {
+    "firstName": "Mohammed",
+    "lastName": "Ansari",
+    "genrePreferences": [
+        "COMEDY",
+        "ACTION"
+    ]
+}
+
+## Get Recommendations
+service url: /recommendations?genres=COMEDY,ROMANTIC&provider=imdb
+method: GET
+
+Note: 
+1. genres query paramter can have multiple values from: COMEDY,ROMANTIC,THRILLER,ACTION
+2. provider query paramter can have values from: netflix or imdb
