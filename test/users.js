@@ -21,7 +21,7 @@ describe('Users', () => {
 
     // test case for save user service
     describe('/POST users', () => {
-        it('it should create a user in test database', (done) => {
+        it('successfully creates a user in test database', (done) => {
             chai.request(app)
                 .post('/users')
                 .send({
@@ -37,6 +37,38 @@ describe('Users', () => {
                     done();
                 });
         });
+
+        it('fails to create a user in test database', (done) => {
+            chai.request(app)
+                .post('/users')
+                .send({
+                    moviePreferences: [
+                        "COMEDY",
+                        "ACTION"
+                    ]
+                })
+                .end((err, res) => {
+                    res.should.have.status(400);
+                    done();
+                });
+        });
+    });
+
+    describe('/GET recommendations', () => {
+        it('successfully get recommendations', (done) => {
+        chai.request(app).get('/recommendations').query({genres: 'COMEDY,ROMANCE', provider: 'netflix'}).end((err,res)=>{
+            res.should.have.status(200);
+            done();
+        });
+        });
+
+        it('fails to get recommendations', (done) => {
+            chai.request(app).get('/recommendations').query({provider: 'netflix'}).end((err,res)=>{
+                res.should.have.status(400);
+                done();
+            });
+            });
+
     });
 
 

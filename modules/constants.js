@@ -2,7 +2,7 @@
  * all constants mentioned here
  */
 module.exports ={
-    noRequestFound:"request not found",
+    invalidRequest:"invalid request",
     netflix:"netflix",
     imdb:"imdb",
     noRecommendation:"no recommendations found"

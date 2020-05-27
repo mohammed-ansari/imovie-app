@@ -5,7 +5,7 @@ const processRecommendation = require('../modules/processRecommendation');
  */
 module.exports.getRecommendationsByTypeAndProvider = (req, res) => {
     if (!req.query.genres || !req.query.provider) {
-        res.status(400).send(constants.noRequestFound);
+        res.status(400).send(constants.invalidRequest);
     } else {
         const genres = req.query.genres.split(',');
         //process recommendation on the basis of dummy json data(netflix,imdb)

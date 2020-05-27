@@ -6,8 +6,8 @@ const constants = require('../modules/constants');
  */
 module.exports.saveUserData = (req, res) => {
   var userDetails = req.body;
-  if (!userDetails) {
-    res.status(400).send(constants.noRequestFound);
+  if (!userDetails.firstName || !userDetails.lastName) {
+    res.status(400).send(constants.invalidRequest);
   } else {
     userData.save(userDetails).then((result) => {
       console.log("user created with id: " + result._id);
