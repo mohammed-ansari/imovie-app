@@ -1,3 +1,4 @@
+//set test configuration
 process.env.NODE_ENV = 'test';
 
 const mongoose = require('mongoose');
@@ -18,7 +19,7 @@ describe('Users', () => {
         });
     });
 
-    // test case for save user
+    // test case for save user service
     describe('/POST users', () => {
         it('it should create a user in test database', (done) => {
             chai.request(app)

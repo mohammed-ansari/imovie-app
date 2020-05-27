@@ -1,9 +1,5 @@
 const mongoose = require('mongoose');
 let config = require('config');
-/**
- * db connection url
- */
-//var dbURL = 'mongodb://localhost:27017/admin';
 
 /**
  * establish connection

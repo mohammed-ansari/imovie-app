@@ -3,9 +3,7 @@
  */
 module.exports ={
     noRequestFound:"request not found",
-    statusCode200:"200",
-    statusCode500:"500",
-    statusCode400:"400"
-
-
+    netflix:"netflix",
+    imdb:"imdb",
+    noRecommendation:"no recommendations found"
 }

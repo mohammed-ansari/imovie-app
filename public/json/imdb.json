@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "genres": [
+            "ROMANTIC"
+        ],
+        "movieName": "Titanic",
+        "movieRating": "5"
+    },
+    {
+        "id": 2,
+        "genres": [
+            "COMEDY",
+            "ACTION"
+        ],
+        "movieName": "Rush Hour",
+        "movieRating": "5"
+    },
+    {
+        "id": 3,
+        "genres": [
+            "THRILLER"
+        ],
+        "movieName": "Constantinople",
+        "movieRating": "3"
+    },
+    {
+        "id": 4,
+        "genres": [
+            "ACTION"
+        ],
+        "movieName": "Matrix",
+        "movieRating": "4"
+    },
+    {
+        "id": 5,
+        "genres": [
+            "COMEDY",
+            "ROMANTIC"
+        ],
+        "movieName": "The Big Sick",
+        "movieRating": "3.5"
+    }
+]

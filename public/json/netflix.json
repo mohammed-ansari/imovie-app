@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "genres": [
+            "ROMANTIC"
+        ],
+        "movieName": "A Star is Born",
+        "movieRating": "5"
+    },
+    {
+        "id": 2,
+        "genres": [
+            "COMEDY",
+            "ACTION"
+        ],
+        "movieName": "Bad Boys",
+        "movieRating": "3"
+    },
+    {
+        "id": 3,
+        "genres": [
+            "THRILLER"
+        ],
+        "movieName": "Grudge",
+        "movieRating": "3"
+    },
+    {
+        "id": 4,
+        "genres": [
+            "ACTION"
+        ],
+        "movieName": "James Bond",
+        "movieRating": "4"
+    },
+    {
+        "id": 5,
+        "genres": [
+            "COMEDY",
+            "ROMANTIC"
+        ],
+        "movieName": "Crazy Rich",
+        "movieRating": "2"
+    }
+]
