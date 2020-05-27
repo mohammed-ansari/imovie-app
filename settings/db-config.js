@@ -1,20 +1,20 @@
 const mongoose = require('mongoose');
-
+let config = require('config');
 /**
  * db connection url
  */
-var dbURL = 'mongodb://localhost:27017/admin';
+//var dbURL = 'mongodb://localhost:27017/admin';
 
 /**
  * establish connection
  */
-mongoose.connect(dbURL);
+mongoose.connect(config.DBHost);
 
 /**
  * successfully connected
  */
 mongoose.connection.on('connected', function () {
-    console.log('Mongoose connected to: ' + dbURL);
+    console.log('Mongoose connected to: ' + config.DBHost);
 })
 
 /**
