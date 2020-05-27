@@ -1,5 +1,5 @@
 const userData = require('../data/user-data');
-const constants = require('../public/javascripts/constants');
+const constants = require('../modules/constants');
 
 /**
  * save user data
@@ -10,7 +10,7 @@ module.exports.saveUserData = (req, res) => {
     res.status(400).send(constants.noRequestFound);
   } else {
     userData.save(userDetails).then((result) => {
-      console.log("user created with id: "+result._id);
+      console.log("user created with id: " + result._id);
       res.status(200).send(result);
     }).catch((err) => {
       res.status(500).send(err);
