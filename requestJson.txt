@@ -17,5 +17,5 @@ service url: /recommendations?genres=COMEDY,ROMANTIC&provider=imdb
 method: GET
 
 Note: 
-1. genres query paramter can have multiple values from: COMEDY,ROMANTIC,THRILLER,ACTION
-2. provider query paramter can have values from: netflix or imdb
+1. genres query parameter can have multiple values from: COMEDY,ROMANTIC,THRILLER,ACTION
+2. provider query parameter can have values from: netflix or imdb
